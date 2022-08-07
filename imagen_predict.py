@@ -165,7 +165,7 @@ def get_imagen(args, unet_dims=None, unet2_dims=None):
 
 
 def make_training_samples(poses, trainer, args):
-    sample_texts = ['a big brown bear']
+    sample_texts = [args.tags]
 
     disp_size = min(args.batch_size, 4)
     sample_poses = None
